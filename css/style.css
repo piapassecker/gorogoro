@@ -48,7 +48,6 @@ td {
   margin: 0 10px;
   border: 1px solid #ccc;
   border-radius: 6px;
-
 }
 
 .panel-default {border-color:white; }
@@ -71,5 +70,4 @@ td {
 		margin-left:-15px;
     margin-right:-15px;
 	}
-
 }
