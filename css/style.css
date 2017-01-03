@@ -1,5 +1,6 @@
-body {
+* {
   padding: 0;
+  margin: 0;
 }
 
 .mystyle {
@@ -39,6 +40,16 @@ td {
 }
 
 .bottom {margin-bottom: 50px; }
+
+.bottom > a {
+  width: 23%;
+  font-size: 18px;
+  padding: 10px 16px;
+  margin: 0 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+
+}
 
 .panel-default {border-color:white; }
 
