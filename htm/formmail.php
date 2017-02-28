@@ -3,10 +3,10 @@
 // ======= Konfiguration:
 
 $mailTo = 'nat-chan@gmx.net';
-$mailFrom = 'info@gorogoroshiyouze.at';
+$mailFrom = 'mail@piap.at';
 $mailSubject    = 'Frage von Website gorogoroshiyouze';
-$returnPage = 'http://www.gorogoroshiyouze.bplaced.com/htm/emailok.html';
-$returnErrorPage = 'http://www.gorogoroshiyouze.bplaced.com/htm/emailerror.html';
+$returnPage = 'http://piap.at/gorogoro/htm/emailok.html';
+$returnErrorPage = 'http://piap.at/gorogoro/htm/emailerror.html';
 $mailText = "";
 
 // ======= Text der Mail aus den Formularfeldern erstellen:
