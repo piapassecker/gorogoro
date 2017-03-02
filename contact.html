@@ -85,23 +85,24 @@
   <h3>or ask me directly</h3>
 
   <h2>Kontaktformular:</h2>
-  <form action="https://docs.google.com/forms/d/e/1FAIpQLSeYhKyjQjiT029pOJPsB9eI2AgKpiCOstciPyiNBx_tEFxu7A/viewform?entry.2005620554=test&entry.1236786594=tes&entry.1045781291=te@&entry.839337160=34dfas" method="post" role="form">
+  <form action="https://docs.google.com/forms/d/e/1FAIpQLSeYhKyjQjiT029pOJPsB9eI2AgKpiCOstciPyiNBx_tEFxu7A/formResponse"  target="hidden_iframe" onsubmit="submitted=true;">
     <div class="col-sm-6 row">
-      <label id="i.desc.1633920210" for="vorname">Vorname*:</label>
-      <input id="i.desc.1633920210" name="i.desc.1633920210" required type="text" class="form-control" >
+      <label id="entry.2005620554" for="vorname">Vorname*:</label>
+      <input id="entry.2005620554" name="entry.2005620554" required type="text" class="form-control" >
 
-      <label id="i.desc.659748564" for="nachname">Nachname*:</label>
-      <input name="entry.1236786594" aria-describedby="i.desc.659748564 i.err.659748564" required type="text" class="form-control" >
+      <label id="entry.1236786594" for="nachname">Nachname*:</label>
+      <input id="entry.1236786594" name="entry.1236786594" required type="text" class="form-control" >
 
-      <label aria-describedby="i.desc.227649005" for="email">E-mail*:</label>
-      <input aria-describedby="i.desc.227649005 i.err.227649005" name="entry.1045781291" required type="email" class="form-control" >
+      <label id="entry.1045781291" for="email">E-mail*:</label>
+      <input id="entry.1045781291" name="entry.1045781291" required type="email" class="form-control" >
     </div>
     <div class="col-sm-6 row1">
-      <label for="frage">Deine Frage*:</label>
-      <textarea name="entry.839337160" jsaction="input:Lg5SV;ti6hGc:XMgOHc;rcuQ6b:WYd;" required class="form-control" rows="7"></textarea>
-      <button type="submit" class="btn btn-default pull-right" style="margin-top:5px; margin-bottom:5px;">Submit</button>
+      <label id="entry.839337160" for="frage">Deine Frage*:</label>
+      <textarea id="entry.839337160" name="entry.839337160" required class="form-control" rows="7"></textarea>
+      <input type="submit" value="submit" class="btn btn-default pull-right" style="margin-top:5px; margin-bottom:5px;">Submit</button>
     </div>
   </form>
+  <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
 </div> <!-- /.container -->
 <!--============================================================================
         ||  CONTENT ENDE ||
@@ -110,6 +111,15 @@
 <!-- Bootstrap core JavaScript
 ================================================== -->
 <!-- Placed at the end of the document so the pages load faster -->
+<script src="js/jquery.min.js"></script>
+<script type="text/javascript">var submitted=false;</script>
+<script type="text/javascript">
+$('#gform').on('submit', function(e) {
+  $('#gform *').fadeOut(2000);
+  $('#gform').prepend('Your submission has been processed...');
+  });
+</script>
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
 <script src="js/bootstrap.min.js"></script>
