@@ -41,13 +41,12 @@ td {
 
 .bottom {margin-bottom: 50px; }
 
-.bottom > a {
-  /*width: 23%;*/
+.inner {
   font-size: 18px;
   padding: 10px 16px;
-  /*margin: 0 10px;*/
   border: 1px solid #ccc;
   border-radius: 6px;
+  margin-bottom: 15px;
 }
 
 .panel-default {border-color:white; }
